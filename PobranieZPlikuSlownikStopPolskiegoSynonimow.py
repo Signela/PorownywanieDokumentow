@@ -19,24 +19,23 @@ def pdfparser(data, nr):
     # print(pdfReader)
     # for i in range(0,pdfReader.numPages,1):
     #     print(pdfReader.getPage(i).extractText())
-    file = io.open(data, mode="r", encoding="utf-8")
+    file = io.open(data, mode="r", encoding='utf-8-sig')
     myfile = file.read()
     myfile = myfile.lower()
     myfile = myfile.replace('\n', ' ').replace(',', '').replace('.', '').replace('!', '').replace('?', '').replace('/',
                                                                                                                    '').replace(
-        '\\', '').replace(';', '').replace('\'', '').replace('"', '').replace(']', '').replace('[', '').replace(')',
-                                                                                                                '').replace(
-        '(', '').replace(':', '').replace('`', '').replace('@', '').replace('#', '').replace('$', '').replace('%',
-                                                                                                              '').replace(
+        '\\', '').replace(';', '').replace('"', '').replace(']', '').replace('[', '').replace(')', '').replace('(',
+                                                                                                               '').replace(
+        ':', '').replace('`', '').replace('@', '').replace('#', '').replace('$', '').replace('%', '').replace(
         '^', '').replace('&', '').replace('*', '').replace('-', ' ').replace('_', ' ').replace('+', ' ').replace('=',
                                                                                                                  ' ').replace(
         '0', '').replace('1', '').replace('2', '').replace('3', '').replace('4', '').replace('5', '').replace('6',
                                                                                                               '').replace(
         '7', '').replace('8', '').replace('9', '').replace('>', ' ').replace('<', ' ').replace('{', '').replace('}',
                                                                                                                 '').replace(
-        '§', '').replace('', '').replace(' ', ' ').replace('–', ' ').replace('“', '').replace('„', '').replace('…',
-                                                                                                                '').replace(
-        '	', '').replace('’', ' ').replace('”', '').replace('  ', ' ').replace('  ', ' ')
+        '§', '').replace('', '').replace('\\ufeff', '').replace(' ', ' ').replace('–', ' ').replace('“', '').replace(
+        '„', '').replace('…', '').replace('	', '').replace('’', ' ').replace('”', '').replace('  ', ' ').replace(
+        '  ', ' ')
     myfile = myfile.split(' ')
     replaceFile = myfile
     print(replaceFile)
@@ -84,6 +83,7 @@ def pdfparser(data, nr):
 
 
 for i in range(0, len(nameDocuments), 1):
-    pdfparser("D:/B spy/!materiały na studia/Praca inżynierska/Implementacja/dokumenty/{}".format(nameDocuments[i]), i)
+    pdfparser("D:\BSpy\!materiały na studia\Praca inżynierska\Implementacja\PorownywanieDokumentow\dokumenty\{}".format(
+        nameDocuments[i]), i)
 cur.close()
 connection.close()

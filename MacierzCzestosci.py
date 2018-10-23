@@ -36,9 +36,19 @@ for dokument in dokumentsText:
         if(m['name'] == dokument['name']):
             m['frequency'] = text.count(m['word'])
 
-for m in matrix:
-    print(m)
-
+def themaDoc(matrix,nameDoc):
+    tmpMatrix = []
+    for m in matrix:
+        if(m['name'] == nameDoc and m['frequency'] > 1):
+            tmpMatrix.append(m)
+    sortMatrix = sorted(tmpMatrix, key=lambda x: x['frequency'],reverse=True)
+    size = 10
+    if( len(sortMatrix) < size):
+        size = len(sortMatrix)
+    for i in range(0,size,1):
+         print(tmpMatrix[i])
+for name in names:
+    themaDoc(matrix,name)
 
 cur.execute('commit')
 cur.close()

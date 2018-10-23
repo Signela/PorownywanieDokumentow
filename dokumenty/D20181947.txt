@@ -1,4 +1,4 @@
-DZIENNIK USTAW
+﻿DZIENNIK USTAW
 RZECZYPOSPOLITEJ POLSKIEJ
 Warszawa, dnia 11 października 2018 r.
 Poz. 1947
@@ -47,7 +47,6 @@ a)	 przygotowanie sprzętu niezbędnego do pomiarów prowadzonych w ramach prac
 b)	 wykonywanie pomiarów, z  wykorzystaniem różnorodnych systemów i  urządzeń pomiarowych, z  uwzględnieniem błędów i ograniczeń stosowanych urządzeń,
 c)	 dokonywanie bieżącej kontroli pomiarów oraz wstępne opracowanie ich wyników.
 
-﻿
 Dziennik Ustaw	
 
 –2–	
@@ -141,7 +140,6 @@ A – jest określony w załączniku nr 3 do rozporządzenia;
 
 B – jest określony w załączniku nr 4 do rozporządzenia.
 
-﻿
 Dziennik Ustaw	
 
 –3–	
@@ -203,7 +201,6 @@ się o ponowne uznanie przepisy ust. 1–7 stosuje się odpowiednio.
 § 7. Rozporządzenie wchodzi w życie po upływie 14 dni od dnia ogłoszenia.
 Minister Obrony Narodowej: wz. T. Zdzikot
 
-﻿
 Dziennik Ustaw	
 
 –4–	
@@ -239,8 +236,7 @@ c)	 fizyka (B3):
 –	 przetworniki i pomiar czasu (B3.8),
 d)	 nautyka (B4):
 –	 środki i systemy oznakowania nawigacyjnego (B4.1),
-–	 Światowy Morski System Łączności Alarmowej i Bezpieczeństwa (GMDSS – Global Maritime Distress and
-Safety System) (B4.2),
+–	 Światowy Morski System Łączności Alarmowej i Bezpieczeństwa (B4.2),
 –	 nawigacyjne mapy morskie (B4.3),
 –	 publikacje nautyczne (B4.4),
 –	 kompasy (B4.5),
@@ -255,7 +251,6 @@ e)	 meteorologia (B5):
 –	 wiatr i fale morskie (B5.2),
 –	 prognozowanie pogody (B5.3).
 
-﻿
 Dziennik Ustaw	
 2.	
 
@@ -280,7 +275,7 @@ c)	 geologia i geofizyka (F3):
 Przedmioty specjalistyczne:
 a)	 pozycjonowanie (H1):
 –	 systemy odniesienia statków i przyrządów pomiarowych (H1.1),
-–	 Światowe Systemy Nawigacji Satelitarnej (GNSS – Global Navigation Satellite Systems) (H1.2),
+–	 Światowe Systemy Nawigacji Satelitarnej (H1.2),
 –	 systemy inercjalne (H1.3),
 –	 systemy nawigacji podwodnej (H1.4),
 –	 pozycjonowanie na profilu (H1.5),
@@ -289,9 +284,9 @@ b)	 hydroakustyczne urządzenia pomiarowe (H2):
 –	 systemy jednowiązkowe (H2.2),
 –	 systemy sonarowe (H2.3),
 –	 systemy wielowiązkowe (H2.4),
-–	 rozpraszanie wsteczne wiązki hydroakustycznej (Backscatter) (H2.5),
+–	 rozpraszanie wsteczne wiązki hydroakustycznej (H2.5),
 c)	 systemy laserowe oraz teledetekcja w hydrografii H3:
-–	 systemy laserowe (LiDAR – Light Detection And Ranging) (H3.1),
+–	 systemy laserowe (H3.1),
 –	 teledetekcja (H3.2),
 d)	 prowadzenie pomiarów hydrograficznych (H4):
 –	 planowanie prac hydrograficznych (H4.1),
@@ -311,7 +306,6 @@ zbieranie i opracowywanie danych hydrograficznych (H6):
 
 Poz. 1947
 
-﻿
 Dziennik Ustaw	
 
 –6–	
@@ -326,11 +320,9 @@ h)	 prawne aspekty prac hydrograficznych (H8):
 –	 wiarygodność produktów (H8.1),
 –	 morskie strefy (H8.2).
 
- znaczenia literowe przyjęte według dokumentu Międzynarodowej Organizacji Hydrograficznej (IHO – International
-* O
-Hydrographic Organization) S-5 A – Standards of Competence for Category „A” Hydrographic Surveyors.
 
-﻿
+* Oznaczenia literowe przyjęte według dokumentu Międzynarodowej Organizacji Hydrograficznej
+
 Dziennik Ustaw	
 
 –7–	
@@ -365,8 +357,7 @@ d)	 nauka o Ziemi (B4):
 –	 osady denne (B4.2),
 e)	 nautyka (B5):
 –	 konwencjonalne środki oznakowania nawigacyjnego (B5.1),
-–	 Światowy Morski System Łączności Alarmowej i Bezpieczeństwa (GMDSS – Global Maritime Distress and
-Safety System) (B5.2),
+–	 Światowy Morski System Łączności Alarmowej i Bezpieczeństwa,
 –	 nawigacyjne mapy morskie (B5.3),
 –	 publikacje nautyczne (B5.4),
 –	 kompasy (B5.5),
@@ -383,7 +374,6 @@ meteorologia (B6):
 –	 wiatr (B5.2),
 –	 prognozowanie pogody (B5.3).
 
-﻿
 Dziennik Ustaw	
 2.	
 
@@ -397,7 +387,7 @@ a)	 hydroakustyka (E1):
 –	 echosondy jednowiązkowe i sonary boczne (E1.2),
 –	 systemy wielowiązkowe (E1.3),
 b)	 teledetekcja (E2):
-–	 systemy laserowe (LiDAR – Light Detection And Ranging) (E2.1),
+–	 systemy laserowe (E2.1),
 –	 teledetekcja (E2.2),
 c)	 poziom morza i pływy (E3):
 –	 zasady określania poziomu morza (E3.1),
@@ -429,9 +419,8 @@ g)	 nauka o środowisku (E7):
 –	 geologia i geofizyka morza (E7.2),
 –	 wpływ środowiska na pomiary hydrograficzne (E7.3).
 
-* Oznaczenia literowe przyjęte według dokumentu Międzynarodowej Organizacji Hydrograficznej
+* Oznaczenia literowe przyjęte według dokumentu Międzynarodowej Organizacji Hydrograficznej
 
-﻿
 Dziennik Ustaw	
 
 –9–	
@@ -451,8 +440,7 @@ Marynarki Wojennej
 Okaziciel niniejszego dyplomu posiada
 wiedzę, umiejętności i doświadczenie w wykonywaniu
 prac hydrograficznych stosownie do wymagań określonych
-w publikacji IHO S-5A “Standards of Competence
-for Category A Hydrographic Surveyors”
+w publikacji IHO S-5A
 
 miejsce na zdjęcie
 
@@ -470,7 +458,6 @@ Podpis posiadacza dyplomu
 Szef Biura Hydrograficznego Marynarki Wojennej
 Gdynia, dnia
 
-﻿
 Dziennik Ustaw	
 
 – 10 – 	
@@ -508,5 +495,3 @@ Podpis posiadacza dyplomu
 
 Szef Biura Hydrograficznego Marynarki Wojennej
 Gdynia, dnia 
-
-
