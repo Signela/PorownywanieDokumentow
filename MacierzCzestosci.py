@@ -45,8 +45,12 @@ def themaDoc(matrix,nameDoc):
     size = 10
     if( len(sortMatrix) < size):
         size = len(sortMatrix)
+    tematy = ''
     for i in range(0,size,1):
-         print(tmpMatrix[i])
+         tematy = tematy + ' ' + sortMatrix[i]['word']
+    cur.execute(
+        'INSERT INTO "C##PPAWLUK"."TEMAT_DOKUMENTU" (NAZWA_DOKUMENTU, TEMATY) VALUES( \'{}\', \'{}\')'.format(
+            nameDoc, tematy))
 for name in names:
     themaDoc(matrix,name)
 
