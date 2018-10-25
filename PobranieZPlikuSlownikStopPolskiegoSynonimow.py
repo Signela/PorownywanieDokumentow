@@ -24,7 +24,7 @@ def pdfparser(data, nr):
     myfile = myfile.lower()
     myfile = myfile.replace('\n', ' ').replace(',', '').replace('.', '').replace('!', '').replace('?', '').replace('/',
                                                                                                                    '').replace(
-        '\\', '').replace(';', '').replace('"', '').replace(']', '').replace('[', '').replace(')', '').replace('(',
+        '\\', '').replace(';', '').replace('"', ' ').replace('\'',' ').replace(']', '').replace('[', '').replace(')', '').replace('(',
                                                                                                                '').replace(
         ':', '').replace('`', '').replace('@', '').replace('#', '').replace('$', '').replace('%', '').replace(
         '^', '').replace('&', '').replace('*', '').replace('-', ' ').replace('_', ' ').replace('+', ' ').replace('=',
@@ -50,8 +50,7 @@ def pdfparser(data, nr):
     j = 0
     for word in replaceFile:
         dictionary = cur.execute(
-            'select slow_forma_podstawowa from slownik where slow_wyraz = \'{}\' and slow_wyraz != slow_forma_podstawowa and rownum=1 '.format(
-                word))
+            'select slow_forma_podstawowa from slownik where slow_wyraz = \'{}\' and slow_wyraz != slow_forma_podstawowa and rownum=1'.format(word))
         for i in dictionary:
             replaceFile.__setitem__(j, i[0])
             j = j + 1

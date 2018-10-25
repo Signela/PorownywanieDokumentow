@@ -4,6 +4,8 @@ import os
 os.environ["NLS_LANG"] = "POLISH_POLAND.AL32UTF8"
 connection = cx_Oracle.connect("C##PPAWLUK", "#Lex2018", "144.21.89.60:1521/ORCL.591263988.oraclecloud.internal")
 cur = connection.cursor()
+cur.execute('DELETE FROM "C##PPAWLUK"."TEMAT_DOKUMENTU"')
+cur.execute('commit')
 dokumentsName = cur.execute('select distinct nazwa_dokumentu from dokument')
 names = []
 for dokument in dokumentsName:
