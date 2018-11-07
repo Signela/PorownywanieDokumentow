@@ -24,8 +24,10 @@ def pdfparser(data, nr):
     myfile = myfile.lower()
     myfile = myfile.replace('\n', ' ').replace(',', '').replace('.', '').replace('!', '').replace('?', '').replace('/',
                                                                                                                    '').replace(
-        '\\', '').replace(';', '').replace('"', ' ').replace('\'',' ').replace(']', '').replace('[', '').replace(')', '').replace('(',
-                                                                                                               '').replace(
+        '\\', '').replace(';', '').replace('"', ' ').replace('\'', ' ').replace(']', '').replace('[', '').replace(')',
+                                                                                                                  '').replace(
+        '(',
+        '').replace(
         ':', '').replace('`', '').replace('@', '').replace('#', '').replace('$', '').replace('%', '').replace(
         '^', '').replace('&', '').replace('*', '').replace('-', ' ').replace('_', ' ').replace('+', ' ').replace('=',
                                                                                                                  ' ').replace(
@@ -39,10 +41,12 @@ def pdfparser(data, nr):
     myfile = myfile.split(' ')
     replaceFile = myfile
     print(replaceFile)
-    stopwords = cur.execute('select * from stopwords')
-    for word in stopwords:
-        while (word[0] in replaceFile):
-            replaceFile.remove(word[0])
+    for word in myfile:
+        stopword = cur.execute(
+            'select STWORD from STOPWORDS where STWORD = \'{}\' and rownum=1'.format(
+                word))
+        for i in stopword:
+            replaceFile.remove(i[0])
     removeTab = {'	', '\n', ''}
     for remove in removeTab:
         while (remove in replaceFile):
@@ -50,7 +54,8 @@ def pdfparser(data, nr):
     j = 0
     for word in replaceFile:
         dictionary = cur.execute(
-            'select slow_forma_podstawowa from slownik where slow_wyraz = \'{}\' and slow_wyraz != slow_forma_podstawowa and rownum=1'.format(word))
+            'select slow_forma_podstawowa from slownik where slow_wyraz = \'{}\' and rownum=1'.format(
+                word))
         for i in dictionary:
             replaceFile.__setitem__(j, i[0])
             j = j + 1
