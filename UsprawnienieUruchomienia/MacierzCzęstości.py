@@ -47,7 +47,7 @@ def themaDoc(matrix,nameDoc):
         if(m['name'] == nameDoc):
             sum = sum + m['frequency']
             tmpMatrix.append(m)
-    sortMatrix = sorted(tmpMatrix, key=lambda x: x['frequency'],reverse=True)
+    sortMatrix = sorted(tmpMatrix, key=lambda x: int(x['frequency']),reverse=True)
     size = 15
     if( len(sortMatrix) < size):
         size = len(sortMatrix)

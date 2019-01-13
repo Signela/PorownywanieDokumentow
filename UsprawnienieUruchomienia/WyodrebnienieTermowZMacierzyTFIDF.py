@@ -20,7 +20,6 @@ with f:
             headers.append(j)
         break
     headers.remove(headers[0])
-    csvreader = csv.reader(f, delimiter=';')
     for i in csvreader:
         tab = []
         for j in i:
@@ -32,7 +31,8 @@ with f:
         term = []
         for w in words:
             term.append([w[0],w[1][headerNum]])
-        matrix = sorted(term,key=lambda k: k[1], reverse=True)
+        matrix = sorted(term,key=lambda k: float(k[1]), reverse=True)
+        print(matrix)
         i=0
         termy = ""
         for m in matrix:
@@ -43,8 +43,8 @@ with f:
                 cur.execute('INSERT INTO "SYSTEM"."TERM_TF_IDF" (NAZWA_DOKUMENTU, TERM) VALUES( \'{}\', \'{}\')'.format(headers[headerNum],termy))
                 cur.execute('commit')
                 break;        
-for m in terms:
-    print(m)
+# for m in terms:
+#     print(m)
 myHeader = ['plik']
 for i in range(1,16,1):
     myHeader.append('słowo'+' '+str(i))
